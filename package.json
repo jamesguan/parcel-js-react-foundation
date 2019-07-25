@@ -4,6 +4,7 @@
   "description": "An opinionated starter kit for react-js",
   "main": "index.js",
   "scripts": {
+    "start": "parcel ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,29 @@
   "bugs": {
     "url": "https://github.com/jamesguan/parcel-js-react-foundation/issues"
   },
-  "homepage": "https://github.com/jamesguan/parcel-js-react-foundation#readme"
+  "homepage": "https://github.com/jamesguan/parcel-js-react-foundation#readme",
+  "dependencies": {
+    "docsify": "^4.9.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router5": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "router5": "^7.0.2",
+    "router5-plugin-browser": "^7.0.2",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.13.6",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2"
+  }
 }
