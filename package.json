@@ -1,0 +1,22 @@
+{
+  "name": "parcel-js-react-foundation",
+  "version": "1.0.0",
+  "description": "An opinionated starter kit for react-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesguan/parcel-js-react-foundation.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "James Guan",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jamesguan/parcel-js-react-foundation/issues"
+  },
+  "homepage": "https://github.com/jamesguan/parcel-js-react-foundation#readme"
+}
