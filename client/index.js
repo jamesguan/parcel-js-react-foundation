@@ -4,7 +4,7 @@ import { RouterProvider, Route } from 'react-router5'
 import createRouter from 'router5';
 import browserPlugin from 'router5-plugin-browser';
 
-import App from './App';
+import { App } from '@myproject/app/src';
 
 
 const routes = [

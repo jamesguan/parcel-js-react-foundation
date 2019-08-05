@@ -4,7 +4,10 @@
   "description": "An opinionated starter kit for react-js",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
+    "ci:custom": "npm ci && npx lerna clean --yes && npm run lerna:bootstrap",
+    "lerna:bootstrap": "npx lerna bootstrap --ci --hoist --ignore-scripts",
+    "lerna:clean": "npx lerna clean --yes",
+    "start": "parcel ./index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,15 +19,21 @@
   ],
   "author": "James Guan",
   "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/jamesguan/parcel-js-react-foundation/issues"
   },
   "homepage": "https://github.com/jamesguan/parcel-js-react-foundation#readme",
   "dependencies": {
-    "docsify": "^4.9.4",
+    "@myproject/app": "file:packages/app",
+    "@myproject/common": "file:packages/common",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
+    "react-helmet-async": "^1.0.2",
+    "react-imported-component": "^5.5.3",
+    "react-router": "^5.0.1",
     "react-router5": "^7.1.0",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
@@ -33,7 +42,12 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.13.6",
@@ -43,6 +57,7 @@
     "jest": "^24.8.0",
     "lerna": "^3.16.4",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "react-hot-loader": "^4.12.10"
   }
 }

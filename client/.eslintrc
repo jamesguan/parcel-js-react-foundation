@@ -1,11 +1,15 @@
 {
+  "extends": [
+    "eslint:all",
+    "plugin:react/all"
+  ],
   "plugins": [
     "babel-eslint",
     "import",
     "jest",
     "jsx",
-    "react",
-  ],
+    "react"
+  ], 
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -13,9 +17,5 @@
       "jsx": true,
       "modules": true
     }
-  },
-  "extends": [
-    "eslint:all",
-    "plugin:react/all"
-  ]
+  }
 }
