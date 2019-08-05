@@ -17,8 +17,11 @@ Proper Bundle Splitting:
 SSR
 Storybook
 
-Commands: 
-npm run start
+Commands
+
+To run the project
+  - npm run ci:custom
+  - npm run start
 
 npm run build:dev
 
