@@ -4,10 +4,13 @@
   "description": "An opinionated starter kit for react-js",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build index.html",
+    "build:dev": "NODE_ENV=development parcel build <entrypoint> --no-minify",
     "ci:custom": "npm ci && npx lerna clean --yes && npm run lerna:bootstrap",
     "lerna:bootstrap": "npx lerna bootstrap --ci --hoist --ignore-scripts",
     "lerna:clean": "npx lerna clean --yes",
     "start": "parcel ./index.html",
+    "clean:nuke": "rm -rf ./package-lock.json && rm -rf ./node_modules && rm -rf ./dist && rm -rf ./.cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +28,7 @@
   },
   "homepage": "https://github.com/jamesguan/parcel-js-react-foundation#readme",
   "dependencies": {
-    "@myproject/app": "file:packages/app",
+    "@myproject/landing": "file:packages/landing",
     "@myproject/common": "file:packages/common",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

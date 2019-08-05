@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Home from './pages/Home';
 
 const App = ({ route }) => {
   if (!route) {
