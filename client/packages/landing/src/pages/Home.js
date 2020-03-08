@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import SomeComponent from '@myproject/common/src/components/SomeComponent';
 //const { SomeComponet } = Components;
 const Home = () => (
