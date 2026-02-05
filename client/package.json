@@ -53,7 +53,7 @@
     "babel-loader": "^8.0.6",
     "eslint": "^6.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.13.6",
+    "eslint-plugin-jest": "^29.12.2",
     "eslint-plugin-jsx": "^0.1.0",
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.1",
